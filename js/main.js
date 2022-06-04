@@ -1,4 +1,9 @@
 document.querySelector('button').addEventListener('click',getVillain)
+document.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    getVillain();
+  }
+});
 
 async function getVillain() {
   const villainName = document.querySelector('#villain-name').value
@@ -15,8 +20,7 @@ async function getVillain() {
     document.querySelector('.quote').innerText = data.quote
     document.querySelector('.image').innerText = data.image
     document.querySelector('.wikiLink').innerText = data.wikiLink
-
-    document.querySelector('#sample-img').src = data.image
+    
   }
   catch (error) {
     console.log(error)
