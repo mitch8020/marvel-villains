@@ -14,63 +14,126 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>MARVEL VILLAINS</h1>
-  <h2>The unofficial API for the villains appearing in the Marvel Cinematic Universe!</h2>
-	<p>For the full JSON object provided by this API, please go to the following link:</p>
-	<p><strong>https://marvel-villains.herokuapp.com/villains</strong></p>
-
-	<h3>List of villains included in this API:</h3>
-	<ul>
-		<li>Red Skull</li>
-		<li>Doctor Faustus</li>
-		<li>Yon-Rogg</li>
-		<li>Iron Monger</li>
-		<li>Whiplash</li>
-		<li>Justin Hammer</li>
-		<li>Abomination</li>
-		<li>General Ross</li>
-		<li>Laufey</li>
-		<li>Loki</li>
-		<li>Aldrich Killian</li>
-		<li>Trevor Slattery</li>
-		<li>Malekith</li>
-		<li>Alexander Pierce</li>
-		<li>Winter Soldier</li>
-		<li>Ronan the Accuser</li>
-		<li>Ego</li>
-		<li>Ultron</li>
-		<li>Yellowjacket</li>
-		<li>Zemo</li>
-		<li>Taskmaster</li>
-		<li>General Dreykov</li>
-		<li>Killmonger</li>
-		<li>Vulture</li>
-		<li>Dormammu</li>
-		<li>Kaecilius</li>
-		<li>Hela</li>
-		<li>Ghost</li>
-		<li>Thanos</li>
-		<li>Ebony Maw</li>
-		<li>Cull Obsidian</li>
-		<li>Proxima Midnight</li>
-		<li>Corvus Glaive</li>
-		<li>Agatha Harkness</li>
-		<li>Karli Morgenthau</li>
-		<li>John Walker</li>
-		<li>Sharon Carter</li>
-		<li>Mandarin</li>
-		<li>Arishem</li>
-		<li>Ikaris</li>
-		<li>Mysterio</li>
-		<li>Green Goblin</li>
-		<li>Doctor Octopus</li>
-		<li>Sandman</li>
-		<li>Lizard</li>
-		<li>Electro</li>
-		<li>Kingpin</li>
-		<li>Arthur Harrow</li>
-		<li>Scarlet Witch</li>
-	</ul>
-	<h3>Documentation:</h3>
+	<header>
+		<h1>MARVEL VILLAINS</h1>
+		<h2>The unofficial API for the villains appearing in the Marvel Cinematic Universe!</h2>
+		<p>For the full JSON object provided by this API, please go to the following link:</p>
+		<p><strong>https://marvel-villains.herokuapp.com/villains</strong></p>
+	</header>
+	<section>
+		<h3>List of villains included in this API</h3>
+		<ul>
+			<li>Red Skull</li>
+			<li>Doctor Faustus</li>
+			<li>Yon-Rogg</li>
+			<li>Iron Monger</li>
+			<li>Whiplash</li>
+			<li>Justin Hammer</li>
+			<li>Abomination</li>
+			<li>General Ross</li>
+			<li>Laufey</li>
+			<li>Loki</li>
+			<li>Aldrich Killian</li>
+			<li>Trevor Slattery</li>
+			<li>Malekith</li>
+			<li>Alexander Pierce</li>
+			<li>Winter Soldier</li>
+			<li>Ronan the Accuser</li>
+			<li>Ego</li>
+			<li>Ultron</li>
+			<li>Yellowjacket</li>
+			<li>Baron Zemo</li>
+			<li>Taskmaster</li>
+			<li>General Dreykov</li>
+			<li>Killmonger</li>
+			<li>Vulture</li>
+			<li>Dormammu</li>
+			<li>Kaecilius</li>
+			<li>Hela</li>
+			<li>Ghost</li>
+			<li>Thanos</li>
+			<li>Ebony Maw</li>
+			<li>Cull Obsidian</li>
+			<li>Proxima Midnight</li>
+			<li>Corvus Glaive</li>
+			<li>Agatha Harkness</li>
+			<li>Karli Morgenthau</li>
+			<li>John Walker</li>
+			<li>Sharon Carter</li>
+			<li>Mandarin</li>
+			<li>Arishem</li>
+			<li>Ikaris</li>
+			<li>Mysterio</li>
+			<li>Green Goblin</li>
+			<li>Doctor Octopus</li>
+			<li>Sandman</li>
+			<li>Lizard</li>
+			<li>Electro</li>
+			<li>Kingpin</li>
+			<li>Arthur Harrow</li>
+			<li>Scarlet Witch</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Documentation</h3>
+		<section>
+			<h4>Way to access objects of individual villains:</h4>
+			<p>For the direct link to the individual villain object: <br><strong>https://marvel-villains.herokuapp.com/villains/<em>Villain Name</em></strong></p>
+			<p>For the JS formatted fetch parameter: <br><strong>`https://marvel-villains.herokuapp.com/villains/${villainName}`</strong></p>
+			<br>
+			<p>**The direct link to the individual villain object will only need the <strong><em>Villain Name</em></strong> query parameter changed to the villain being requested.**</p>
+			<p>**The <strong><em>Villain Name</em></strong> query parameter can be substituted by any of the villains in the list above. It is spelling specific with spaces separating each word but is NOT case-sensitive.**</p>
+			<p>**For the JS formatted fetch parameter, make sure to include backticks (`) to your code to use the template literal in your JavaScript.**</p>
+		</section>
+		<br>
+		<section>
+			<h4>There are 8 keys/properties that come with each villain object:</h4>
+			<table>
+				<tr>
+					<th>PROPERTY</th>
+					<th>DESCRIPTION</th>
+				</tr>
+				<tr>
+					<td>name</td>
+					<td>[String] Formal name of character</td>
+				</tr>
+				<tr>
+					<td>alias</td>
+					<td>[String] Villain name of character</td>
+				</tr>
+				<tr>
+					<td>media</td>
+					<td>[Array] Movie(s) / TV Show(s) character appears as main villain</td>
+				</tr>
+				<tr>
+					<td>powers</td>
+					<td>[Array] Documented powers and abilities</td>
+				</tr>
+				<tr>
+					<td>trivia</td>
+					<td>[String] Random fact about character</td>
+				</tr>
+				<tr>
+					<td>quote</td>
+					<td>[String] Quote mentioned by the character</td>
+				</tr>
+				<tr>
+					<td>image</td>
+					<td>[String] Link to the picture of the character from a CDN (Content Delivery Network) </td>
+				</tr>
+				<tr>
+					<td>wiki-link</td>
+					<td>[String] Link to the character&#39;s profile page on https://marvel.fandom.com</td>
+				</tr>
+			</table>
+		</section>
+	</section>
+	<section>
+		<h3>Sample Code:</h3>
+	</section>
+	<footer>
+		<p>Happy Coding! :)</p>
+		<h5>Find me on: <a href="https://twitter.com/realjpmitra" class="icon brands fa-twitter"><span class="label">Twitter</span></a>, <a href="https://www.linkedin.com/in/jpmitra/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>, <a href="https://github.com/mitch8020" class="icon brands fa-github"><span class="label">Github</span></a></h5>
+	</footer>
 </body>
 </html>

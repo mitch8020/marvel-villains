@@ -213,7 +213,7 @@ let villains = {
     'wiki-link': 'https://marvel.fandom.com/wiki/Darren_Cross_(Earth-199999)'
   },
   // Captain America: Civil War
-  'zemo': {
+  'baron zemo': {
     'name': 'Helmut Zemo',
     'alias': 'Baron Zemo',
     'media': ['Captain America: Civil War'],
@@ -234,7 +234,7 @@ let villains = {
     'image': 'https://static.wikia.nocookie.net/marveldatabase/images/0/0d/Black_Widow_%28film%29_poster_016_textless.jpg/revision/latest/scale-to-width-down/666?cb=20210708113720',
     'wiki-link': 'https://marvel.fandom.com/wiki/Antonia_Dreykov_(Earth-199999)'
   },
-  'dreykov': {
+  'general dreykov': {
     'name': 'Dreykov',
     'alias': 'General Dreykov',
     'media': ['Black Widow'],
@@ -531,6 +531,16 @@ let villains = {
     'image': 'https://static.wikia.nocookie.net/marveldatabase/images/c/c8/Wanda_Maximoff_%28Earth-199999%29_from_Doctor_Strange_in_the_Multiverse_of_Madness_Promo_001.jpg/revision/latest/scale-to-width-down/700?cb=20220504145159',
     'wiki-link': 'https://marvel.fandom.com/wiki/Wanda_Maximoff_(Earth-199999)'
   },
+  'unknown': {
+    'name': 'unknown',
+    'alias': 'unknown',
+    'media': ['unknown'],
+    'powers': ['unknown'],
+    'trivia': 'unknown',
+    'quote': 'unknown',
+    'image': 'unknown',
+    'wiki-link': 'unknown'
+  }
 }
 
 app.get('/', (req,res)=>{
@@ -547,6 +557,15 @@ app.get('/css/style.css', (req,res)=>{
 
 app.get('/villains', (req,res)=>{
   res.json(villains)
+})
+
+app.get('/villains/:name', (req,res)=>{
+  const villainName = req.params.name.toLowerCase()
+  if(villains[villainName]){
+      res.json(villains[villainName])
+  }else{
+      res.json(villains['unknown'])
+  }
 })
 
 app.listen(process.env.PORT || PORT, ()=>{
