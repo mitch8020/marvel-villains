@@ -16,13 +16,13 @@
 <body>
 	<header>
 		<h1>MARVEL VILLAINS</h1>
-		<h2>The unofficial API for the villains appearing in the Marvel Cinematic Universe!</h2>
+		<h2>The unofficial API for all the villains appearing in the Marvel Cinematic Universe!</h2>
 		<p>For the full JSON object provided by this API, please go to the following link:</p>
 		<p><strong>https://marvel-villains.herokuapp.com/villains</strong></p>
 	</header>
 	<section>
-		<h3>List of villains included in this API</h3>
-		<ul>
+		<h3>List of Villains included in this API</h3>
+		<ul class="villain-list">
 			<li>Red Skull</li>
 			<li>Doctor Faustus</li>
 			<li>Yon-Rogg</li>
@@ -78,11 +78,11 @@
 		<h3>Documentation</h3>
 		<section>
 			<h4>Way to access objects of individual villains:</h4>
-			<p>For the direct link to the individual villain object: <br><strong>https://marvel-villains.herokuapp.com/villains/<em>Villain Name</em></strong></p>
+			<p>For the direct link to the individual villain object (JSON): <br><strong>https://marvel-villains.herokuapp.com/villains/<em>Villain Name</em></strong></p>
 			<p>For the JS formatted fetch parameter: <br><strong>`https://marvel-villains.herokuapp.com/villains/${villainName}`</strong></p>
 			<br>
 			<p>**The direct link to the individual villain object will only need the <strong><em>Villain Name</em></strong> query parameter changed to the villain being requested.**</p>
-			<p>**The <strong><em>Villain Name</em></strong> query parameter can be substituted by any of the villains in the list above. It is spelling specific with spaces separating each word but is NOT case-sensitive.**</p>
+			<p>**The <strong><em>Villain Name</em></strong> query parameter can be substituted by any of the villains in the list above. It is spelling specific with spaces separating each word and is NOT case-sensitive.**</p>
 			<p>**For the JS formatted fetch parameter, make sure to include backticks (`) to your code to use the template literal in your JavaScript.**</p>
 		</section>
 		<br>
@@ -103,7 +103,7 @@
 				</tr>
 				<tr>
 					<td>media</td>
-					<td>[Array] Movie(s) / TV Show(s) character appears as main villain</td>
+					<td>[Array] Movie(s) / TV Show(s) character appears as the main villain</td>
 				</tr>
 				<tr>
 					<td>powers</td>
@@ -122,18 +122,40 @@
 					<td>[String] Link to the picture of the character from a CDN (Content Delivery Network) </td>
 				</tr>
 				<tr>
-					<td>wiki-link</td>
-					<td>[String] Link to the character&#39;s profile page on https://marvel.fandom.com</td>
+					<td>wikiLink</td>
+					<td>[String] Link to the character&#39;s profile page on <a href="https://marvel.fandom.com">https://marvel.fandom.com</a></td>
 				</tr>
 			</table>
 		</section>
 	</section>
 	<section>
 		<h3>Sample Code</h3>
+		<label for="villain-name"><strong>https://marvel-villains.herokuapp.com/villains/</strong><input id="villain-name" type="text" placeholder="Cull Obsidian"></label>
+		<button>Get Villain</button>
+		<br>
+		<section id="sample-code">
+			<section class="half-page">
+				<ul>
+					<li><strong>name:</strong> <span class="name">unknown</span></li>
+					<li><strong>alias:</strong> <span class="alias">unknown</span></li>
+					<li><strong>media:</strong> <span class="media">[unknown]</span></li>
+					<li><strong>powers:</strong> <span class="powers">[unknown]</span></li>
+					<li><strong>trivia:</strong> <span class="trivia">unknown</span></li>
+					<li><strong>quote:</strong> <span class="quote">unknown</span></li>
+					<li><strong>image:</strong> <span class="image">unknown</span></li>
+					<li><strong>wikiLink:</strong> <span class="wikiLink">unknown</span></li>
+				</ul>
+			</section>
+			<section class="half-page">
+				<figure><img id="sample-img" src="" alt="villain"></figure>
+			</section>
+		</section>
 	</section>
 	<footer>
 		<p>Happy Coding! :)</p>
-		<h5>Find me on: <a href="https://twitter.com/realjpmitra" class="icon brands fa-twitter"><span class="label">Twitter</span></a>, <a href="https://www.linkedin.com/in/jpmitra/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>, <a href="https://github.com/mitch8020" class="icon brands fa-github"><span class="label">Github</span></a></h5>
+		<h5><small>&copy; JP Mitra. All rights reserved.</small> Find me on: <a href="https://twitter.com/realjpmitra" class="icon brands fa-twitter"><span class="label">Twitter</span></a>, <a href="https://www.linkedin.com/in/jpmitra/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>, <a href="https://github.com/mitch8020" class="icon brands fa-github"><span class="label">Github</span></a></h5>
 	</footer>
+
+	<script src="/js/main.js"></script>
 </body>
 </html>
