@@ -1,0 +1,70 @@
+/*
+  ===========================
+  BOX MODEL HACK
+  ===========================
+*/
+
+* {
+     box-sizing: border-box;
+}
+
+/*
+  ===========================
+  CLEARFIX HACK
+  ===========================
+*/
+
+.clearfix:before, .clearfix:after {
+     content: "";
+     display: block;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clearfix:after {
+     clear: both;
+}
+
+.clearfix {
+	clear: both;
+     *zoom: 1;
+}
+
+/*
+  ===========================
+  BASE STYLES
+  ===========================
+*/
+body {
+  width: 100%;
+}
+
+body > * {
+  width: 100%;
+  text-align: center;
+  padding: .5rem;
+}
+
+h1 {
+  font-size: 5rem;
+  padding: 2rem 0;
+  color: red;
+}
+
+h3 {
+  padding-top: 2rem;
+}
+
+li {
+  padding: .2rem 0;
+}
+
+/*
+  ===========================
+  LAYOUT
+  ===========================
+*/
+strong {
+  font-weight: bold;
+}
