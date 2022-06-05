@@ -3,8 +3,7 @@ The unofficial API for all the villains appearing in the Marvel Cinematic Univer
 
 **Link to project:** https://marvel-villains.herokuapp.com/
 
-![marvel-villains-api](https://user-images.githubusercontent.com/100659138/172031214-7b10df24-4404-4658-ba93-4505e99e0368.gif)
-
+<img src="https://user-images.githubusercontent.com/100659138/172031214-7b10df24-4404-4658-ba93-4505e99e0368.gif" alt="marvel-villains-api" height="400">
 
 ## How It's Made:
 
