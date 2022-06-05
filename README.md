@@ -3,17 +3,17 @@ The unofficial API for all the villains appearing in the Marvel Cinematic Univer
 
 **Link to project:** https://marvel-villains.herokuapp.com/
 
-![alt tag](https://twitter.com/i/status/1533207252945059842)
+![marvel villains API](https://jpmitra.netlify.app/images/marvel-villains-api-7-5-ratio.gif)
 
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript, Node.js, Express.js
 
-<!-- Here's where you can go to town on how you actually built this thing. Write as much as you can here, it's totally fine if it's not too much just make sure you write *something*. If you don't have too much experience on your resume working on the front end that's totally fine. This is where you can really show off your passion and make up for that ten fold. -->
+As a part of learning the different features of Node.js and Express.js, I built an API while using data from the https://marvel.fandom.com website. This API includes the utilization of retrieving files from the Heroku server using the Express.js provided 'get' method as well as a brief example at the bottom of the site using promises, async/await, and event listeners.
 
 ## Lessons Learned:
 
-<!-- No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing. -->
+This project has been a great reminder that a big part of programming and engineering is troubleshooting problems and debugging code. I caught a few typos in my variables before I spent hours debugging them. I've made sure to test that all of the JSON objects work when requested and created a client-test folder with HTML & JS to test that the image links are working.
 
 ## Examples:
 Take a look at these couple examples that I have in my own portfolio:
