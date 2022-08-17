@@ -23,6 +23,3 @@ Take a look at these couple examples that I have in my own portfolio:
 **Level Ground Website:** https://github.com/mitch8020/level-ground-website
 
 **Magic Eight Ball:** https://github.com/mitch8020/magic-eight-ball
-
-
-
